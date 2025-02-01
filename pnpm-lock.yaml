@@ -6,7 +6,17 @@ settings:
 
 importers:
 
-  .: {}
+  .:
+    dependencies:
+      next:
+        specifier: 15.1.6
+        version: 15.1.6(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      react:
+        specifier: ^19.0.0
+        version: 19.0.0
+      react-dom:
+        specifier: ^19.0.0
+        version: 19.0.0(react@19.0.0)
 
   apps/admin:
     dependencies:
@@ -19,6 +29,9 @@ importers:
       react-dom:
         specifier: ^19.0.0
         version: 19.0.0(react@19.0.0)
+      shared:
+        specifier: workspace:^
+        version: link:../../packages/shared
     devDependencies:
       '@eslint/eslintrc':
         specifier: ^3
@@ -53,6 +66,9 @@ importers:
       react-dom:
         specifier: ^19.0.0
         version: 19.0.0(react@19.0.0)
+      shared:
+        specifier: workspace:^
+        version: link:../../packages/shared
     devDependencies:
       '@eslint/eslintrc':
         specifier: ^3
@@ -75,6 +91,8 @@ importers:
       typescript:
         specifier: ^5
         version: 5.7.3
+
+  packages/shared: {}
 
 packages:
 
